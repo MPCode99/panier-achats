@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Appli from './Appli';
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('racine')).render(
   <React.StrictMode>
     <Appli />
-  </React.StrictMode>,
-  document.getElementById('racine')
+  </React.StrictMode>
 );
